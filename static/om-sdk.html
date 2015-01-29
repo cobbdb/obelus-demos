@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" id="om-wrapper-html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="//s3.amazonaws.com/dev.obelusmedia/sdk/platforms/js/1.1.0/om-sdk.min.css">
+    <script src="//s3.amazonaws.com/dev.obelusmedia/sdk/platforms/js/1.1.0/om-sdk.min.js"></script>
+    <script>
+        obelus.iframe_wrapper.init({
+            PUBLISHER_ID: 'b503cf67-5b4a-49fc-91b7-0772b6d63994',
+            ADSERVER_AUTHORIZATION: 'ApiKey dcobb:af8f6211357cbfaa3a266d314a9ec09bdb93cff1',
+            SHOW_ADS_ON_DESKTOP_DEVICES: true
+        });
+    </script>
+</head>
+<body id="om-wrapper-body">
+    <div id="om-contentpanel">
+        <iframe id="om-iframe"></iframe>
+    </div>
+    <div id="om-adpanel">
+        <div id="om-adfull-div">
+            <a id="om-link" onclick="obelus.ads.click()">
+                <img id="om-adfull-img">
+            </a>
+        </div>
+        <div id="om-loading-indicator">
+            Loading...
+            <div id="floatingCirclesG">
+                <div class="f_circleG" id="frotateG_01"></div>
+                <div class="f_circleG" id="frotateG_02"></div>
+                <div class="f_circleG" id="frotateG_03"></div>
+                <div class="f_circleG" id="frotateG_04"></div>
+                <div class="f_circleG" id="frotateG_05"></div>
+                <div class="f_circleG" id="frotateG_06"></div>
+                <div class="f_circleG" id="frotateG_07"></div>
+                <div class="f_circleG" id="frotateG_08"></div>
+            </div>
+        </div>
+    </div>
+    <a id="om-link-banner" onclick="obelus.ads.click()">
+        <div id="om-adbanner-div">
+            <img id="om-adbanner-img">
+        </div>
+    </a>
+</body>
+</html>
