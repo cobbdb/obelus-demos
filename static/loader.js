@@ -11,7 +11,7 @@ obelus.cmd.push(function () {
         publisherId: 'bc4208b3-d01b-4f5f-935a-58b7923d6d01',
         authId: 'ApiKey api:5e04178b8c685f6bd2d36f0cb8d337af8acaffc3',
         desktop: true,
-        minLife: 4500,
+        minLife: 6000,
         frequency: 1,
         banners: true,
         bannerPosition: 'bottom right'
