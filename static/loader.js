@@ -14,6 +14,6 @@ obelus.cmd.push(function () {
         minLife: 1000,
         frequency: 1,
         banners: true,
-        bannerPosition: 'top center'
+        bannerPosition: 'bottom right'
     });
 });
