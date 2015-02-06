@@ -40,7 +40,7 @@ module.exports = function (grunt) {
                 options: {
                     data: {
                         storage: str(storagePath, 'dev', version),
-                        pubid: '9e56a2c6-fc72-4c7d-8175-1a5c47d3abf0'
+                        pubid: 'fd571a6e-af4c-4ea4-acc9-22cdad9f1e5e'
                     }
                 }
             },
