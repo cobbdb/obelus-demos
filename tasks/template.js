@@ -9,7 +9,7 @@ var str = require('curb'),
  * Both: 9e56a2c6-fc72-4c7d-8175-1a5c47d3abf0
  *
  * ### Integ: dcobb:cb720d82363c04d9914b2491824eb135e52350cd
- * Integ: ef501c36-d2ab-4e6e-8d1f-013bcd395842
+ * Integ: 5efa5780-31f5-4a89-8d98-4a242edad533
  */
 module.exports = function (grunt) {
     grunt.config.merge({
@@ -57,7 +57,7 @@ module.exports = function (grunt) {
                 options: {
                     data: {
                         storage: str(storagePath, 'integ', version),
-                        pubid: 'ef501c36-d2ab-4e6e-8d1f-013bcd395842',
+                        pubid: '5efa5780-31f5-4a89-8d98-4a242edad533',
                         auth: 'dcobb:cb720d82363c04d9914b2491824eb135e52350cd'
                     }
                 }
