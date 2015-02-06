@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+
+</head>
+<body>
+
+    <script src="<%= storage %>/sdk.js"></script>
+    <script src="../static/loader.js"></script>
+
+    <h1>Index Page</h1>
+    <a href="second.html">Next page</a>
+    <p>
+    <img id="testimg">
+    <script>
+        (function () {
+            var url = 'http://static.photo.net/attachments/bboard/00R/00R5A2-76401584.jpg';
+            url += '?' + Math.random();
+            document.getElementById('testimg').src = url;
+        }());
+    </script>
+</body>
+</html>

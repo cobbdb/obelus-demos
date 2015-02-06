@@ -1,0 +1,25 @@
+{
+  "name": "obelus-demos",
+  "version": "1.0.0",
+  "description": "These demos are setup between two pages. Navigating between two specific links. See the readme in each demo's directory for more information about how to use the demo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cobbdb/obelus-demos.git"
+  },
+  "author": "Dan Cobb <cobbdb@gmail.com> (http://www.github.com/cobbdb)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cobbdb/obelus-demos/issues"
+  },
+  "homepage": "https://github.com/cobbdb/obelus-demos",
+  "devDependencies": {
+    "curb": "^1.0.1",
+    "grunt": "^0.4.5",
+    "grunt-template": "^0.2.3",
+    "matchdep": "^0.3.0"
+  }
+}
