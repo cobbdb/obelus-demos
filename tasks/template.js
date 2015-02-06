@@ -25,7 +25,8 @@ module.exports = function (grunt) {
                 options: {
                     data: {
                         storage: '/MobileWeb/dist',
-                        pubid: '9e56a2c6-fc72-4c7d-8175-1a5c47d3abf0'
+                        pubid: '9e56a2c6-fc72-4c7d-8175-1a5c47d3abf0',
+                        auth: 'api:5e04178b8c685f6bd2d36f0cb8d337af8acaffc3'
                     }
                 }
             },
@@ -40,7 +41,8 @@ module.exports = function (grunt) {
                 options: {
                     data: {
                         storage: str(storagePath, 'dev', version),
-                        pubid: 'fd571a6e-af4c-4ea4-acc9-22cdad9f1e5e'
+                        pubid: '9e56a2c6-fc72-4c7d-8175-1a5c47d3abf0',
+                        auth: 'api:5e04178b8c685f6bd2d36f0cb8d337af8acaffc3'
                     }
                 }
             },
@@ -55,25 +57,11 @@ module.exports = function (grunt) {
                 options: {
                     data: {
                         storage: str(storagePath, 'integ', version),
-                        pubid: 'ef501c36-d2ab-4e6e-8d1f-013bcd395842'
+                        pubid: 'ef501c36-d2ab-4e6e-8d1f-013bcd395842',
+                        auth: 'dcobb:cb720d82363c04d9914b2491824eb135e52350cd'
                     }
                 }
-            },
-            'build-prod': {
-                files: [{
-                    dest: 'prod/',
-                    cwd: 'templates',
-                    src: '**/*',
-                    filter: 'isFile',
-                    expand: true
-                }],
-                options: {
-                    data: {
-                        storage: str(storagePath, 'prod', version),
-                        pubid: '9e56a2c6-fc72-4c7d-8175-1a5c47d3abf0'
-                    }
-                }
-            },
+            }
         }
     });
 };
