@@ -5,7 +5,6 @@ obelus.cmd.push(function () {
         publisherId: '<%= pubid %>',
         authId: 'ApiKey <%= auth %>',
         desktop: true,
-        minLife: 6000,
         frequency: 1,
         banners: true,
         bannerPosition: 'bottom right'
