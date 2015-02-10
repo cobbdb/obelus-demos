@@ -3,7 +3,8 @@ obelus.cmd = obelus.cmd || [];
 obelus.cmd.push(function () {
     obelus.enable({
         publisherId: '<%= pubid %>',
-        authId: 'ApiKey <%= auth %>',
+        userName: '<%= user %>',
+        authId: '<%= auth %>',
         desktop: true,
         frequency: 1,
         banners: true,
