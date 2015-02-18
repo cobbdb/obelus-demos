@@ -16,6 +16,9 @@ var str = require('curb'),
  * aaebed62-55dd-4859-960e-ad473b3c3318
  */
 module.exports = function (grunt) {
+    var cid = grunt.option('cid'),
+        consolepath = 'jsconsole.com/remote.js?' + cid;
+
     grunt.config.merge({
         template: {
             'build-local': {
@@ -31,7 +34,8 @@ module.exports = function (grunt) {
                         storage: '/MobileWeb/dist',
                         pubid: '9e56a2c6-fc72-4c7d-8175-1a5c47d3abf0',
                         user: 'api',
-                        auth: '5e04178b8c685f6bd2d36f0cb8d337af8acaffc3'
+                        auth: '5e04178b8c685f6bd2d36f0cb8d337af8acaffc3',
+                        consolepath: cid ? consolepath : null
                     }
                 }
             },
@@ -48,7 +52,8 @@ module.exports = function (grunt) {
                         storage: str(storagePath, 'dev', version),
                         pubid: '9e56a2c6-fc72-4c7d-8175-1a5c47d3abf0',
                         user: 'api',
-                        auth: '5e04178b8c685f6bd2d36f0cb8d337af8acaffc3'
+                        auth: '5e04178b8c685f6bd2d36f0cb8d337af8acaffc3',
+                        consolepath: cid ? consolepath : null
                     }
                 }
             },
@@ -65,7 +70,8 @@ module.exports = function (grunt) {
                         storage: str(storagePath, 'integ', version),
                         pubid: '5efa5780-31f5-4a89-8d98-4a242edad533',
                         user: 'dcobb',
-                        auth: 'cb720d82363c04d9914b2491824eb135e52350cd'
+                        auth: 'cb720d82363c04d9914b2491824eb135e52350cd',
+                        consolepath: cid ? consolepath : null
                     }
                 }
             },
@@ -82,7 +88,8 @@ module.exports = function (grunt) {
                         storage: str(storagePath, 'prod', version),
                         pubid: 'aaebed62-55dd-4859-960e-ad473b3c3318',
                         user: 'dcobb',
-                        auth: 'd6207c37ad48d93ce732670c595edda06d3496eb'
+                        auth: 'd6207c37ad48d93ce732670c595edda06d3496eb',
+                        consolepath: cid ? consolepath : null
                     }
                 }
             }
